@@ -2,12 +2,15 @@ package com.jUnit.junit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import static  org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class JunitTests {
+public class JunitTests {
 
 	@Test
-	void contextLoads() {
+	public void myTestMethod() {
+		assertEquals(2,2) ;
+		System.out.println("run est success");
 	}
 
 }
